@@ -7,11 +7,11 @@ class Talking extends Phaser.Scene {
         // dialog constants
         this.DBOX_X = 0			        // dialog box x-position
         this.DBOX_Y = 400			    // dialog box y-position
-        this.DBOX_FONT = 'gem_font'	    // dialog box font key
+        this.DBOX_FONT = 'dis_font'	    // dialog box font key
 
         this.TEXT_X = 50			    // text w/in dialog box x-position
         this.TEXT_Y = 445			    // text w/in dialog box y-position
-        this.TEXT_SIZE = 24		        // text font size (in pixels)
+        this.TEXT_SIZE = 22		        // text font size (in pixels)
         this.TEXT_MAX_WIDTH = 715	    // max width of text within box
 
         this.NEXT_TEXT = '[SPACE]'	    // text to display for next prompt
@@ -53,6 +53,8 @@ class Talking extends Phaser.Scene {
         this.minerva = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'minerva').setOrigin(0, 1)
         this.neptune = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'neptune').setOrigin(0, 1)
         this.jove = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'jove').setOrigin(0, 1)
+        this.solbadguy = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'sol badguy').setOrigin(0, 1)
+
 
         // input
         cursors = this.input.keyboard.createCursorKeys()
